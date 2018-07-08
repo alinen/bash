@@ -5,6 +5,8 @@ vim()
    "/cygdrive/c/Program Files (x86)/Vim/Vim74/gvim.exe" "$@";
 }
 
+alias ll='ls -l'                              # long list
+alias la='ls -A'                              # all but . and ..
 alias heroku="/cygdrive/c/Program\ Files\ \(x86\)/Heroku/bin/Heroku.bat"
 
 oblique_strategy()
@@ -17,3 +19,6 @@ oblique_strategy
 
 DISPLAY=":0.0"
 export DISPLAY
+#eval $(ssh-agent -s)
+#ssh-add ~/.ssh/animazing
+
