@@ -34,3 +34,4 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+umask 0027 # preferred default umask
