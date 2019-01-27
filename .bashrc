@@ -19,8 +19,6 @@ oblique_strategy
 
 DISPLAY=":0.0"
 export DISPLAY
-#eval $(ssh-agent -s)
-#ssh-add ~/.ssh/animazing
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -34,4 +32,13 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+if ! ssh-add -l | grep -q "alinen@Xin" ; then
+   eval $(ssh-agent -s)
+   ssh-add ~/.ssh/github
+fi
+
+if ! mount | grep -q "D:"; then
+   sudo mount -t drvfs -o metadata D: /mnt/d
+fi
+alias csc=csc.exe
 umask 0027 # preferred default umask
