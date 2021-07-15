@@ -14,7 +14,7 @@ oblique_strategy()
    head -n $((${RANDOM} % `wc -l < oblique_strategies.txt` + 1)) oblique_strategies.txt | tail -1;
 }
 
-echo "Greetings, master."
+echo "Greetings, human."
 oblique_strategy
 
 DISPLAY=":0.0"
