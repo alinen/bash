@@ -1,14 +1,19 @@
-set nocompatible
-source $VIMRUNTIME/vimrc_example.vim
-"source $VIMRUNTIME/mswin.vim
-set guifont=Consolas:h8:cANSI
+colorscheme industry
 set textwidth=0
-"behave mswin
-set lines=50 columns=150
-winpos 10 10
 set sw=2
 set tabstop=2
 set expandtab
+set guifont=Consolas:h8:cANSI
+set colorcolumn=80
+
+"gvim only settings
+"set nocompatible
+"source $VIMRUNTIME/vimrc_example.vim
+"source $VIMRUNTIME/mswin.vim
+"behave mswin
+"set lines=50 columns=150 
+"winpos 10 10 
+
 
 syntax match nonascii "[^\x00-\x7F]"
 highlight nonascii guibg=Red ctermbg=2
